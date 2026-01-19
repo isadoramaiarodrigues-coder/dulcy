@@ -1,0 +1,220 @@
+a {
+  color: rgb(87, 55, 27);
+  text-decoration: none;
+  font-family: 'Cormorant Garamond';
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+
+.slogan{
+  color:rgb(250, 99, 99);
+  background-color: #f7e8d5;
+  font-weight: 800;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  height: 100px;
+  font-family: 'Cormorant Garamond';
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 24px;
+  
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background-color: #d57269;
+  margin: 11px auto 0;
+}
+
+.azul {
+  background-color: #b4cbff;
+  padding-top: 10px ;
+  height:600px;
+  background-image: url("./img/granulado.png");
+   background-repeat: repeat;
+   background-size: 100px;
+
+  }
+
+.topo{
+   background-color: #b4cbff;
+  
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.item a {
+  padding: 15px 25px;
+  background-color: rgb(250, 99, 99); 
+  border: 4px inset #ff6b6b;
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 800 !important;
+  color: #4b2e15;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 30px;
+}
+
+
+a:hover {
+  background-color: rgb(222, 40, 40);
+  color: #4b2e15;
+  transition: 0.3s;
+}
+
+.nomessites { 
+  background-color:#b4cbff;
+  font-weight:500px;
+  font-size: 40px;
+  font-family: 'Cormorant Garamond', serif;color:rgb(75, 46, 21);
+  padding: 40px;
+  padding-bottom: 30px;
+  border-bottom: #4b2e15 70px;
+}
+
+span{
+  color: #d63e3e;
+}
+
+.descricoes{
+  color:rgb(250, 99, 99);
+  font-size:30px;
+ padding-left: 30px;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond';
+  background-image: url("./img/granulado2.png");
+   background-repeat: repeat;
+   background-size: 100px;
+
+}
+
+img{
+max-width: 100%;
+width: 400px;
+padding-left: 30px;
+}
+
+.pattern{
+  background-color: rgb(251, 197, 197);
+padding-top: 40px;
+  padding-bottom: 900px;
+  background-image: url("./img/granulado2.png");
+   background-repeat: repeat;
+   background-size: 100px;
+
+
+}
+
+.inicio{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  box-shadow: 0 7px 12px rgba(0,0,0,0.08);
+  border-radius: 8px;
+
+}
+
+.colunas{
+  display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+
+
+}
+
+@media (max-width:600px) {
+  .colunas{
+    grid-template-columns: 1fr;
+  }
+}
+
+.sub{
+ color:rgb(250, 99, 99);
+  background-color: #f7e8d5;
+  font-weight: 800;
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 100px;
+  font-family: 'Cormorant Garamond';
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0 7px 12px rgba(0,0,0,0.08);
+  border-radius: 8px;
+}
+
+@media (max-width:600px) {
+  .sub{
+    padding-bottom: 40px;
+  }
+}
+
+
+.footercontainer{
+ color:rgb(250, 99, 99);
+  background-color: #f7e8d5;
+  font-weight: 800;
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 100px;
+  font-family: 'Cormorant Garamond';
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 24px;
+  display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+
+}
+
+@media (max-width:600px) {
+  .footercontainer{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  body {
+    background-color: #fdf7f3; /* fundo mais suave */
+  }
+
+  .azul,
+  .topo,
+  .nomessites {
+    background-color: #c7d6ff; /* azul mais claro no mobile */
+  }
+
+  .item a {
+    background-color: #ff8f8f; /* rosa menos forte */
+    border-color: #ff7a7a;
+    color: #4b2e15;
+  }
+
+  h3,
+  .descricoes {
+    background-color: transparent;
+    color: #d63e3e;
+  }
+
+}
